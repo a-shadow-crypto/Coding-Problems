@@ -1,2 +1,2 @@
 # Coding-Problems
-Collections of Coding Problems from Prepbytes for sharpening the Skills.
+Collections of Coding Problems from Different Sources for sharpening the Skills.
