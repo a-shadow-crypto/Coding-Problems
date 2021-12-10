@@ -1,6 +1,9 @@
 import java.util.*;
 
 public class BinarySearch {
+
+    static int count = 0;
+
     public static int binarySearch(int [] arr, int x) {
 
         int li = 0;
@@ -8,6 +11,7 @@ public class BinarySearch {
         
         while(li<=ri) {
             int mid = (li+ri)/2;
+            count++;
             if(arr[mid]==x) {
                 return mid;
             } else if(arr[mid]>x) {
@@ -32,8 +36,11 @@ public class BinarySearch {
         int x = scn.nextInt();
 
         int result = binarySearch(arr, x);
-        if(result == -1){
-            System.out.println("Not Found!");
+        
+        System.out.println("Count is " + count);
+        
+        if (result == -1) {
+            System.out.println("Not Found");
         } else {
             System.out.println(result);
         }
